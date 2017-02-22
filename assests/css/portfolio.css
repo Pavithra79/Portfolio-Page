@@ -1,0 +1,288 @@
+body{
+   position: relative;
+}
+
+/*Navbar*/
+.navbar-inverse {
+  background: black;
+  color: #F1C40F;
+  font-weight: 700;
+}
+    
+.navbar-inverse .navbar-brand, .navbar-inverse a{
+   color: #F1C40F;
+}
+.navbar-inverse .navbar-nav>li>a {
+   color: #F1C40F;
+} 
+
+
+/*Home*/
+
+#Home {
+  position: relative;
+  min-height: 100vh;
+  background: url(Images/work-m.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.layer {
+    background-color: rgba(241, 196, 15, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.me{
+	color: white;
+	padding-top: 23%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Hammersmith One', sans-serif;
+	
+}
+
+.name{
+	margin-bottom: 3%;
+	font-size: 3em;
+}
+
+.job{
+	font-size: 2.5em;
+}
+
+figcaption{
+	font-size: 1.4em;
+	font-weight: 700;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.tech{
+	font-size: 0.8em;
+	color: orange;
+	font-family: 'Lato', sans-serif;
+}
+
+
+/*Ribbon*/
+
+h2 {
+    text-align: center;
+    position: relative;
+    color: #fff;    
+    margin: 0 -30px 30px -30px;
+    padding: 10px 0; 
+    text-shadow: 0 1px rgba(0,0,0,.8);
+    background-color: #5c5c5c;
+    background-image:  linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+    -moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 0 rgba(0,0,0,.3);
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+h2:before, 
+h2:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+    bottom: -10px;
+}
+
+
+h2:before {
+    border-width: 0 10px 10px 0;
+    border-right-color: #222;
+    left: 0;
+}
+
+h2:after {
+    border-width: 0 0 10px 10px;
+    border-left-color: #222;
+    right: 0;
+}
+
+
+
+/*About*/
+
+#About{
+	min-height: 100vh;
+	font-size: 1.6em;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	color: #fff;
+	background: #D1913C; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #D1913C , #FFD194); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #D1913C , #FFD194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+
+
+.content-about{
+	width: 80%;
+	padding-top: 3%;
+}
+
+p{
+	padding-top: 2%;
+}
+
+span{
+	color: black;
+	font-weight: 700;
+}
+
+
+
+/*Portfolio*/
+
+#Portfolio {
+	min-height: 100vh;
+	width:100%;
+	margin: 0 auto;
+    background: white;    
+}
+
+.content-portfolio{
+  margin: 0 auto;
+  width: 90%;   
+  padding-bottom: 5%;
+}
+
+.content-portfolio .col-sm-6,
+.content-portfolio .col-md-4 {
+  margin: 2% auto;
+}
+
+
+.port-h{
+	margin-top: 10%;	      
+}
+
+
+/*------ Thumbs -------*/
+
+.thumb {
+  margin: 0 auto;
+  position: relative;
+}
+
+.hover-opaque {
+  background: #000;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+}
+
+.thumb .fa {
+  color: #FFF;
+  margin: -15px;
+  position: absolute;
+  opacity: 0;
+  top: 45%;
+  right: 50%;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+}
+
+.thumb:hover .hover-opaque {
+  opacity: 0.5;
+}
+
+.thumb:hover .fa {
+  opacity: 1;
+}
+
+.thumb-caption {
+  background: #FFF;
+  border-color: #E6E6E6;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  color: #4E4E54;
+  font-weight: 700;
+  padding: 10px;
+}
+
+figcaption a {
+  color: #4E4E54;
+  font-size: 0.9em;
+}
+
+figcaption a:hover {
+  color: #73A7F7;
+  text-decoration: none;
+}  
+
+
+
+/*Contact*/
+#Contact {
+    min-height: 90vh;
+    padding-top: 10%;
+	background: #D1913C; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #D1913C , #FFD194); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #D1913C , #FFD194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	          
+                
+}
+
+.contact-info {
+  text-align: center;	
+  max-width: 90vh;
+  min-height: 60vh;
+  padding-top: 5%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 50%;
+}
+
+
+h3{
+	padding-bottom: 2%; 
+}
+
+i{
+	margin: 2%;
+}
+
+.fa-envelope-o{
+   color: #CB4335;
+}
+
+.fa-github{
+   color: #333;
+}
+
+.fa-linkedin-square{
+   color: #0077B5;
+}
+
+.fa-free-code-camp{
+   color: #196F3D  ;
+}
+
+.fa-cloud{
+	color: #5DADE2;
+}
+
+
+/*Footer*/
+footer {
+  text-align: center;	
+  min-height: 10vh;
+  color: white;
+  background-color: black;
+}  
